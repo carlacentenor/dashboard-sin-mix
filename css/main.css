@@ -1,0 +1,345 @@
+@font-face {
+    font-family: "papafont";
+    src: url("../assets/fonts/Knockout-HTF49-Liteweight.otf") format("truetype");
+}
+
+body {
+    font-family: papafont;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --grispapa1: #6A514C;
+    --redpapadark: #BB141A;
+    --greenpapa: #009774;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr 1fr;
+    grid-template-rows: 0.7fr 1.3fr 1fr 1fr;
+    grid-template-areas: "menu reports reports reports""menu reports reports reports""menu reports reports reports""menu reports reports reports";
+    padding: 0 10px 10px 0px;
+}
+
+.menu {
+    grid-area: menu;
+    height: 100vh;
+}
+
+.list-nav {
+    list-style: none;
+    color: var(--grispapa1);
+    font-size: 28px;
+}
+
+.reports {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.3fr 0.3fr 1fr .5fr;
+    grid-template-areas: "numbers-goals numbers-goals numbers-goals""indicators indicators indicators""fast-reports fast-reports fast-reports""build-report build-report build-report";
+    grid-area: reports;
+}
+
+.numbers-goals {
+    grid-area: numbers-goals;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 2fr;
+    align-content: center;
+    align-items: center;
+}
+
+.number-indicators {
+    text-align: center;
+}
+
+.number-indicators .number {
+    font-size: 80px;
+    margin-bottom: 0px;
+    line-height: .9;
+}
+
+.number-indicators .title-number {
+    color: var(--grispapa1);
+    font-size: 32px;
+}
+
+.indicators {
+    grid-area: indicators;
+}
+
+.title-section {
+    color: var(--grispapa1);
+    font-size: 32px;
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+
+.indicators-items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 40px;
+}
+
+.item {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    font-size: 30px;
+    line-height: 1;
+    color: var(--grispapa1);
+    align-items: center;
+    grid-gap: 10px;
+}
+
+.item-month {
+    width: 100%;
+    background-color: var(--redpapadark);
+    color: white;
+    border: none;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    padding: 8px;
+}
+
+.select-item {
+    padding: 10px;
+    text-align: right;
+}
+
+.item .select-item p,
+.margin-none {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.title-item {
+    text-align: right;
+}
+
+.fast-reports {
+    grid-area: fast-reports;
+    display: grid;
+    grid-template-rows: .3fr 2fr;
+}
+
+.report-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+}
+
+.group-section-report {
+    display: grid;
+    grid-template-rows: .7fr 1fr;
+    grid-gap: 10px;
+}
+
+.group-section-report-2 {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.group-section-report-3 {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.group-subsection-report-1 {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    font-size: 20px;
+    grid-gap: 5px;
+}
+
+.group-subsection-report-2 {
+    display: grid;
+    grid-template-rows: repeat(2, .3fr);
+    font-size: 20px;
+    grid-gap: 10px;
+}
+
+.subitem-group-report-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr .5fr;
+    grid-gap: 5px;
+}
+
+.button-report {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    text-align: center;
+    grid-gap: 10px;
+}
+
+.title-subsection-report {
+    font-size: 20px;
+    margin-bottom: 0;
+    margin-top: 0;
+    text-transform: uppercase
+}
+
+.description-subsection-report {
+    font-size: 20px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.build-report {
+    grid-area: build-report;
+    display: grid;
+    grid-template-rows: .3fr .5fr;
+}
+
+.container-checkbox {
+    display: grid;
+    grid-template-columns: .5fr .5fr .5fr 1fr 1fr;
+    color: var(--grispapa1);
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+.box-date-picker {
+    display: grid;
+    grid-template-columns: .2fr 1fr;
+    align-items: center;
+}
+
+.container-date {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+[type="date"] {
+    background: #fff url(../assets/icons/calendario-2.png) 97% 50% no-repeat;
+}
+
+[type="date"]::-webkit-inner-spin-button {
+    display: none;
+}
+
+[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+}
+
+
+/* custom styles */
+
+.date-picker {
+    border: none;
+    width: 190px;
+    padding: 10px;
+    font-size: 20px;
+    font-family: papafont;
+}
+
+.box-loading {
+    background-color: var(--grispapa1);
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.form-group input {
+    padding: 0;
+    height: initial;
+    width: initial;
+    margin-bottom: 0;
+    display: none;
+    cursor: pointer;
+}
+
+.form-group label {
+    position: relative;
+    cursor: pointer;
+}
+
+.form-group label:before {
+    content: '';
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: 2px solid var(--redpapadark);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    padding: 10px;
+    display: inline-block;
+    position: relative;
+    top: 1px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.form-group input:checked+label:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 4px;
+    left: 9px;
+    width: 6px;
+    height: 14px;
+    border: solid var(--redpapadark);
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+
+/* Reutilizables */
+
+.green-papa-bg {
+    background-color: var(--greenpapa);
+    color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.red-dark-papa-bg {
+    background-color: var(--redpapadark);
+    color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.black-papa-bg {
+    background-color: black;
+    color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.image-fluid {
+    width: 40px;
+    height: 40px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.padding-10 {
+    padding: 10px;
+}
+
+.align-flex-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.font-super-title {
+    font-size: 30px;
+}
+
+.font-super-month {
+    font-size: 24px;
+}
+
+.text-left {
+    text-align: left
+}
+
+.pl-20 {
+    padding-left: 20px
+}
