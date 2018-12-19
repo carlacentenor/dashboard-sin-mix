@@ -54,6 +54,7 @@ body {
     grid-template-columns: 1fr 1fr 1fr 2fr;
     align-content: center;
     align-items: center;
+    padding-top: 30px;
 }
 
 .number-indicators {
@@ -210,7 +211,6 @@ body {
     font-size: 30px !important;
     color: var(--grispapa1) !important;
     grid-template-columns: .5fr .5fr .5fr 1fr 1fr;
-    margin-top: 30px;
 }
 
 .container-checkbox label {
@@ -362,6 +362,10 @@ body {
 
 .text-left {
     text-align: left
+}
+
+.pt-5 {
+    padding-top: 15px;
 }
 
 .pl-20 {
