@@ -1,0 +1,68 @@
+/*
+
+	INSTRUCTIONS ---------------------------------------------------------------------------------
+  
+  1. link this stylesheet in the head of your HTML
+  	 <link href="YOUR PATH/calendar-style.css" rel="stylesheet" type="text/css" />
+     
+  2. Set the file name as data-theme attribute on your input
+  	 <input data-theme="calendar-style" />
+     
+  3. That's it!
+  
+  When you run script the style will be automatically applied.
+
+*/
+div.datedropper.calendar-style {
+  border-radius: 8px;
+  width: 200px;
+}
+div.datedropper.calendar-style .picker {
+  border-radius: 8px;
+  box-shadow: 0 0 32px 8px rgba(0, 0, 0, 0.1);
+}
+div.datedropper.calendar-style .pick-l {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+div.datedropper.calendar-style:before,
+div.datedropper.calendar-style .pick-submit,
+div.datedropper.calendar-style .pick-lg-b .pick-sl:before,
+div.datedropper.calendar-style .pick-m,
+div.datedropper.calendar-style .pick-lg-h {
+  background-color: #009774;
+}
+div.datedropper.calendar-style .pick-y.pick-jump,
+div.datedropper.calendar-style .pick li span,
+div.datedropper.calendar-style .pick-lg-b .pick-wke,
+div.datedropper.calendar-style .pick-btn {
+  color: #BB141A;
+}
+div.datedropper.calendar-style .picker,
+div.datedropper.calendar-style .pick-l {
+  background-color: #FFF;
+}
+div.datedropper.calendar-style .picker,
+div.datedropper.calendar-style .pick-arw,
+div.datedropper.calendar-style .pick-l {
+  color: #6A514C;
+}
+div.datedropper.calendar-style .pick-m,
+div.datedropper.calendar-style .pick-m .pick-arw,
+div.datedropper.calendar-style .pick-lg-h,
+div.datedropper.calendar-style .pick-lg-b .pick-sl,
+div.datedropper.calendar-style .pick-submit {
+  color: #FFF;
+}
+div.datedropper.calendar-style.picker-tiny:before,
+div.datedropper.calendar-style.picker-tiny .pick-m {
+  background-color: #FFF;
+}
+div.datedropper.calendar-style.picker-tiny .pick-m,
+div.datedropper.calendar-style.picker-tiny .pick-m .pick-arw {
+  color: #6A514C;
+}
+div.datedropper.calendar-style.picker-lkd .pick-submit {
+  background-color: #FFF;
+  color: #6A514C;
+}
