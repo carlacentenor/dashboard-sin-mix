@@ -231,6 +231,7 @@ body {
 
 [type="text"] {
     background: #fff url(../assets/icons/calendario-2.png) 97% 50% no-repeat;
+    cursor: pointer;
 }
 
 [type="text"]::-webkit-inner-spin-button {
