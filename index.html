@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
+        crossorigin="anonymous">
     <link href="js/Datedropper3-master/datedropper.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="js/timedropper-master/timedropper.css">
     <link href="js/Datedropper3-master/calendar-style.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="css/main.css">
     <title>Dashboards</title>
@@ -51,7 +53,8 @@
                     <div class="item">
                         <div class="title-item">Mes</div>
                         <div class="select-item">
-                            <input type="text" data-lang="es" data-format="m-Y" data-theme="calendar-style" data-large-default="true" data-modal="true" class="datepicker date-picker  red-dark-papa-bg">
+                            <input type="text" data-lang="es" data-theme="calendar-style" data-format="m-Y"
+                                data-large-default="true" data-modal="true" class="datepicker date-picker  red-dark-papa-bg">
                         </div>
                     </div>
                     <div class="item">
@@ -89,7 +92,7 @@
                                     detalle, hora, pedido FB, hora registro impixel, tiempo de redigitación
                                 </p>
                             </div>
-                          
+
                         </div>
                         <div class="button-report-venta ">
                             <div class=" padding-10 red-dark-papa-bg align-flex-item ">
@@ -99,7 +102,7 @@
                                 <img class="image-fluid" src="assets/icons/download-button-white.png" alt="download">
                             </div>
                         </div>
-                     
+
                     </div>
                     <div class="group-section-report-2">
                         <div class="group-subsection-report-1  ">
@@ -138,19 +141,55 @@
                                 <p class="padding-10 font-super-title">Rebote en Conversación</p>
                             </div>
                             <div class="title-subsection-report green-papa-bg ">
-                                <input type="text" data-lang="es" data-theme="calendar-style" data-format="m-Y" data-large-default="true" data-modal="true" class="datepicker date-picker  green-papa">
+                                <input type="text" data-lang="es" data-format="m-Y" data-theme="calendar-style"
+                                    data-large-default="true" data-modal="true" class="datepicker date-picker  green-papa">
                             </div>
-                            <div class="text-center green-papa-bg padding-10 align-flex-item "> <img class="image-fluid" src="assets/icons/download-button-white.png" alt="download"></div>
+                            <div class="text-center green-papa-bg padding-10 align-flex-item "> <img class="image-fluid"
+                                    src="assets/icons/download-button-white.png" alt="download"></div>
                         </div>
-                        <div class="subitem-group-report-2">
-                                <div class="title-subsection-report green-papa-bg ">
-                                    <p class="padding-10 font-super-title">Rebote en Tienda</p>
-                                </div>
-                                <div class="title-subsection-report green-papa-bg ">
-                                    <input type="text" data-lang="es" data-theme="calendar-style" data-format="m-Y" data-large-default="true" data-modal="true" class="datepicker date-picker  green-papa">
-                                </div>
-                                <div class="text-center green-papa-bg padding-10 align-flex-item "> <img class="image-fluid" src="assets/icons/download-button-white.png" alt="download"></div>
+                        <div class="subitem-group-report-2 ">
+                            <div class="title-subsection-report green-papa-bg ">
+                                <p class="padding-10 font-super-title">Reporte por tienda</p>
                             </div>
+                            <div class="title-subsection-report green-papa-bg ">
+                                <input type="text" data-lang="es" data-format="m-Y" data-theme="calendar-style"
+                                    data-large-default="true" data-modal="true" class="datepicker date-picker  green-papa">
+                            </div>
+                            <div class="text-center green-papa-bg padding-10 align-flex-item "> <img class="image-fluid"
+                                    src="assets/icons/download-button-white.png" alt="download"></div>
+                        </div>
+                        <div class="subitem-group-report-2 ">
+                            <div class="title-subsection-report green-papa-bg ">
+                                <p class="padding-10 font-super-title">Mix de Venta por día</p>
+                            </div>
+                            <div class="title-subsection-report green-papa-bg ">
+                                <input type="text" data-lang="es" data-format="m-Y" data-theme="calendar-style"
+                                    data-large-default="true" data-modal="true" class="datepicker date-picker  green-papa">
+                            </div>
+                            <div class="text-center green-papa-bg padding-10 align-flex-item "> <img class="image-fluid"
+                                    src="assets/icons/download-button-white.png" alt="download"></div>
+                        </div>
+                        <div class="subitem-group-report-2 ">
+                            <div class="title-subsection-report green-papa-bg ">
+                                <p class="padding-10 font-super-title">Mix de Venta por hora</p>
+                            </div>
+                            <div class="title-subsection-report section-time-day">
+                                <div class=" green-papa-bg ">
+                                    <input type="text" data-lang="es" data-format="m-Y" data-theme="calendar-style"
+                                        data-large-default="true" data-modal="true" class="datepicker date-picker  green-papa">
+                                </div>
+                                <div class=" green-papa-bg "> <input type="text" backgroundColor="red" class="timepicker date-picker  green-papa"
+                                        id="time">
+                                </div>
+
+
+
+                            </div>
+                            <div class="text-center green-papa-bg padding-10 align-flex-item "> <img class="image-fluid"
+                                    src="assets/icons/download-button-white.png" alt="download"></div>
+                        </div>
+
+
                     </div>
                 </div>
             </div>
@@ -222,7 +261,8 @@
                             <div>
                                 <p class="margin-none">Del *</p>
                             </div>
-                            <div> <input type="text" data-large-mode="true" data-theme="calendar-style" data-lang="es" data-format="d-m-Y" data-large-default="true" data-modal="true" class="datepicker date-picker  red-dark-papa-bg width-190 "></div>
+                            <div> <input type="text" data-large-mode="true" data-theme="calendar-style" data-lang="es"
+                                    data-format="d-m-Y" data-large-default="true" data-modal="true" class="datepicker date-picker  red-dark-papa-bg width-190 "></div>
 
 
                         </div>
@@ -230,7 +270,8 @@
                             <div>
                                 <p class="margin-none">Al *</p>
                             </div>
-                            <div> <input type="text" data-large-mode="true" data-theme="calendar-style" data-lang="es" data-format="d-m-Y" data-large-default="true" data-modal="true" class="datepicker date-picker  green-papa-bg width-190 ">
+                            <div> <input type="text" data-large-mode="true" data-theme="calendar-style" data-lang="es"
+                                    data-format="d-m-Y" data-large-default="true" data-modal="true" class="datepicker date-picker  green-papa-bg width-190 ">
                             </div>
 
 
@@ -245,8 +286,15 @@
         </div>
         <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
         <script src="js/Datedropper3-master/datedropper.js"></script>
+        <script src="js/timedropper-master/timedropper.min.js"></script>
+
         <script>
             $('.datepicker').dateDropper();
+            $(".timepicker").timeDropper({
+                borderColor: '#009774',
+                textColor: '#009774',
+                primaryColor: '#6A514C'
+            });
         </script>
 </body>
 
