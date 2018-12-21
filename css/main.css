@@ -69,7 +69,7 @@ body {
 
 .number-indicators .title-number {
     color: var(--grispapa1);
-    font-size: 32px;
+    font-size: 28px;
 }
 
 .indicators {
@@ -140,13 +140,28 @@ body {
 
 .group-section-report {
     display: grid;
-    grid-template-rows: .7fr 1fr;
+    grid-template-rows: 3.5fr 1fr;
     grid-gap: 10px;
 }
 
 .group-section-report-2 {
     display: grid;
     grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.group-subsection-report-venta {
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: 20px;
+    grid-gap: 5px;
+    cursor: pointer;
+}
+
+.button-report-venta{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
     grid-gap: 10px;
 }
 
@@ -244,6 +259,11 @@ body {
 
 
 /* custom styles */
+
+
+
+
+
 
 .date-picker {
     border: none !important;
@@ -391,3 +411,9 @@ body {
 .width-190 {
     width: 190px;
 }
+
+/* datedropper hide days */
+
+ul.pick.pick-d{
+    display: none;
+  }
