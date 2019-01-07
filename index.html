@@ -5,9 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
-    <link href="js/Datedropper3-master/datedropper.css" rel="stylesheet" type="text/css" />
-    <link href="js/Datedropper3-master/calendar-style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
     <title>Dashboards</title>
 </head>
@@ -16,238 +15,74 @@
     <div class="grid-container">
         <div class="menu">
             <div>
-                <img src="assets/images/logo.png" alt="">
+                <img class="img-logo" src="assets/images/logo.png" alt="">
             </div>
             <ul class="list-nav">
-                <li class="select-menu">Dashboard</li>
+                <li>Dashboard</li>
                 <li>Tiendas</li>
-                <li>Productos</li>
+                <li class="select-menu">Productos</li>
                 <li>Pedidos</li>
                 <li>Blacklist</li>
             </ul>
         </div>
-        <div class="reports">
-            <div class="numbers-goals">
-                <div class="number-indicators">
-                    <div class="number">1000</div>
-                    <div class="title-number">Clientes Registrados</div>
-                </div>
-                <div class="number-indicators">
-                    <div class="number">700</div>
-                    <div class="title-number">Pedidos</div>
-                </div>
-                <div class="number-indicators">
-                    <div class="number">S/60.50</div>
-                    <div class="title-number">Ticket Promedio del mes</div>
-                </div>
-                <div class="number-indicators">
-                    <div class="number">S/100 000</div>
-                    <div class="title-number">Acumulados</div>
-                </div>
-            </div>
-            <div class="indicators">
-                <p class="title-section">Indicadores del mes:</p>
-                <div class="indicators-items">
-                    <div class="item">
-                        <div class="title-item">Mes</div>
-                        <div class="select-item">
-                            <input type="text" data-lang="es" data-format="m-Y" data-theme="calendar-style" data-large-default="true" data-modal="true" class="datepicker date-picker  red-dark-papa-bg">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="title-item">Pedidos</div>
-                        <div class="select-item green-papa-bg">
-                            <p>200</p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="title-item">Clientes Nuevos</div>
-                        <div class="select-item green-papa-bg">
-                            <p>20</p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="title-item">Venta del mes</div>
-                        <div class="select-item green-papa-bg">
-                            <p>S/ 3456</p>
-                        </div>
-                    </div>
+        <div class="products">
+            <div class="header-product">
+                <p class="title-section">Productos</p>
 
+            </div>
+            <div class="search-product ">
+                <div class="align-flex-item align-flex-item-left">
+                    <div class="input-search">
+                        <i class="fas fa-search color-green-add-product"></i> <input type="search" placeholder="Buscar Productos">
+                    </div>
+                </div>
+
+                <div class="align-flex-item align-flex-item-right">
+                    <p class="color-green-add-product border-add-product"><i class="fas fa-plus pr-10"></i>Agregar un
+                        producto</p>
                 </div>
 
             </div>
-            <div class="fast-reports">
-                <div>
-                    <p class="title-section">Reportes Rápidos</p>
-                </div>
-                <div class="report-section">
-                    <div class="group-section-report ">
-                        <div class="group-subsection-report-venta  ">
-                            <div class="group-subsection-report__title padding-10 red-dark-papa-bg">
-                                <p class="title-subsection-report font-super-title">VENTA DEL DÍA</p>
-                                <p class="description-subsection-report">Cliente, Teléfono, pedido, monto de compra,
-                                    detalle, hora, pedido FB, hora registro impixel, tiempo de redigitación
-                                </p>
-                            </div>
-                          
-                        </div>
-                        <div class="button-report-venta ">
-                            <div class=" padding-10 red-dark-papa-bg align-flex-item ">
-                                <img class="image-fluid" src="assets/icons/calendar-white.png" alt="calendar">
-                            </div>
-                            <div class=" padding-10 red-dark-papa-bg align-flex-item ">
-                                <img class="image-fluid" src="assets/icons/download-button-white.png" alt="download">
-                            </div>
-                        </div>
-                     
-                    </div>
-                    <div class="group-section-report-2">
-                        <div class="group-subsection-report-1  ">
-                            <div class="group-subsection-report__title padding-10 red-dark-papa-bg">
-                                <p class="title-subsection-report font-super-title">REPORTE DE CLIENTES Y SU CONSUMO</p>
+            <div class="panel-product">
+                <table class="product-table">
+                    <thead>
+                        <tr>
+                            <th>Código</th>
+                            <th>Nombre</th>
+                            <th>Descripción</th>
+                            <th>Categoría</th>
+                            <th>Tiendas Activas</th>
+                            <th>Editar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="text-center">804097</td>
+                            <td>Coca Cola sin Azúcar</td>
+                            <td>Cola sin azúcar personal</td>
+                            <td class="text-center">Bebidas</td>
+                            <td class="text-center">36/36</td>
+                            <td class="text-center"><i class="fas fa-pen-square icon-size"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="text-center">804116</td>
+                            <td>Stuffed Chessesticks </td>
+                            <td>6 Deliciosos palitos rellenos de 6 quesos, cubiertos con nuestra inigualable Salsa
+                                Garlic con un toque especial de tocino ahumado</td>
+                            <td class="text-center">Adicional</td>
+                            <td class="text-center">36/36</td>
+                            <td class="text-center"><i class="fas fa-pen-square icon-size"></i></td>
+                        </tr>
 
-                            </div>
-                            <div class="button-report">
-                                <div class="padding-10 red-dark-papa-bg align-flex-item ">
-                                    <img class="image-fluid" src="assets/icons/calendar-white.png" alt="calendar">
-                                </div>
-                                <div class="padding-10 red-dark-papa-bg align-flex-item ">
-                                    <img class="image-fluid" src="assets/icons/download-button-white.png" alt="download">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="group-subsection-report-1  ">
-                            <div class="group-subsection-report__title padding-10 black-papa-bg">
-                                <p class="title-subsection-report font-super-title">REPORTE BLACKLIST</p>
-
-                            </div>
-                            <div class="button-report">
-                                <div class="padding-10 black-papa-bg align-flex-item ">
-                                    <img class="image-fluid" src="assets/icons/calendar-white.png" alt="calendar">
-                                </div>
-                                <div class="padding-10 black-papa-bg align-flex-item ">
-                                    <img class="image-fluid" src="assets/icons/download-button-white.png" alt="download">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="group-section-report-3 ">
-                        <div class="subitem-group-report-2">
-                            <div class="title-subsection-report green-papa-bg ">
-                                <p class="padding-10 font-super-title">Rebote en Conversación</p>
-                            </div>
-                            <div class="title-subsection-report green-papa-bg ">
-                                <input type="text" data-lang="es" data-theme="calendar-style" data-format="m-Y" data-large-default="true" data-modal="true" class="datepicker date-picker  green-papa">
-                            </div>
-                            <div class="text-center green-papa-bg padding-10 align-flex-item "> <img class="image-fluid" src="assets/icons/download-button-white.png" alt="download"></div>
-                        </div>
-                        <div class="subitem-group-report-2">
-                                <div class="title-subsection-report green-papa-bg ">
-                                    <p class="padding-10 font-super-title">Reporte por Tienda</p>
-                                </div>
-                                <div class="title-subsection-report green-papa-bg ">
-                                    <input type="text" data-lang="es" data-theme="calendar-style" data-format="m-Y" data-large-default="true" data-modal="true" class="datepicker date-picker  green-papa">
-                                </div>
-                                <div class="text-center green-papa-bg padding-10 align-flex-item "> <img class="image-fluid" src="assets/icons/download-button-white.png" alt="download"></div>
-                            </div>
-                    </div>
-                </div>
-            </div>
-            <div class="build-report">
-                <div>
-                    <p class="title-section">Reportes Personalizados</p>
-                </div>
-                <div class="container-checkbox">
-
-                    <div class="pt-5">
-                        <div class="form-group">
-                            <input type="checkbox" name="" id="client">
-                            <label for="client">Cliente</label>
-                        </div>
-                        <div class="form-group">
-                            <input type="checkbox" name="" id="order">
-                            <label for="order">Pedido</label>
-                        </div>
-                        <div class="form-group">
-                            <input type="checkbox" name="" id="monto">
-                            <label for="monto">Monto</label>
-                        </div>
-                        <div class="form-group">
-                            <input type="checkbox" name="" id="store">
-                            <label for="store">Tienda</label>
-                        </div>
-
-                    </div>
-                    <div class="pt-5">
-
-                        <div class="form-group">
-                            <input type="checkbox" name="" id="pizza">
-                            <label for="pizza">Pizzas</label>
-                        </div>
+                    </tbody>
+                </table>
 
 
-
-                        <div class="form-group">
-                            <input type="checkbox" name="" id="adicionales">
-                            <label for="adicionales">Adicionales</label>
-                        </div>
-
-
-
-                        <div class="form-group">
-                            <input type="checkbox" name="" id="bebidas">
-                            <label for="bebidas">Bebidas</label>
-                        </div>
-
-                    </div>
-                    <div class="pt-5">
-                        <div class="form-group">
-                            <input type="checkbox" name="" id="phone">
-                            <label for="phone">Teléfono</label>
-                        </div>
-                        <div class="form-group">
-                            <input type="checkbox" name="" id="birthday">
-                            <label for="birthday">Cumpleaños</label>
-                        </div>
-                        <div class="form-group">
-                            <input type="checkbox" name="" id="age">
-                            <label for="age">Edad</label>
-                        </div>
-
-
-                    </div>
-                    <div class="container-date">
-                        <div class="box-date-picker">
-                            <div>
-                                <p class="margin-none">Del *</p>
-                            </div>
-                            <div> <input type="text" data-large-mode="true" data-theme="calendar-style" data-lang="es" data-format="d-m-Y" data-large-default="true" data-modal="true" class="datepicker date-picker  red-dark-papa-bg width-190 "></div>
-
-
-                        </div>
-                        <div class="box-date-picker">
-                            <div>
-                                <p class="margin-none">Al *</p>
-                            </div>
-                            <div> <input type="text" data-large-mode="true" data-theme="calendar-style" data-lang="es" data-format="d-m-Y" data-large-default="true" data-modal="true" class="datepicker date-picker  green-papa-bg width-190 ">
-                            </div>
-
-
-                        </div>
-
-                    </div>
-                    <div class="box-loading">
-                        <p>Selecciona los campos para el reporte</p>
-                    </div>
-                </div>
             </div>
         </div>
-        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-        <script src="js/Datedropper3-master/datedropper.js"></script>
-        <script>
-            $('.datepicker').dateDropper();
-        </script>
+
+    </div>
+
 </body>
 
 </html>
