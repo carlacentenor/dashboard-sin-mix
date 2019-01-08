@@ -32,7 +32,7 @@
             </div>
             <div class="search-product ">
                 <div class="align-flex-item align-flex-item-left">
-                    <div class="input-search">
+                    <div class="input-style">
                         <i class="fas fa-search color-green-add-product"></i> <input type="search" placeholder="Buscar Productos">
                     </div>
                 </div>
@@ -62,7 +62,7 @@
                             <td>Cola sin azúcar personal</td>
                             <td class="text-center">Bebidas</td>
                             <td class="text-center">36/36</td>
-                            <td class="text-center"><i class="fas fa-pen-square icon-size"></i></td>
+                            <td class="text-center"><a href="#openModal"><i class="fas fa-pen-square icon-size"></i></a></td>
                         </tr>
                         <tr>
                             <td class="text-center">804116</td>
@@ -71,7 +71,7 @@
                                 Garlic con un toque especial de tocino ahumado</td>
                             <td class="text-center">Adicional</td>
                             <td class="text-center">36/36</td>
-                            <td class="text-center"><i class="fas fa-pen-square icon-size"></i></td>
+                            <td class="text-center"><a href="#openModal"><i class="fas fa-pen-square icon-size"></i></a></td>
                         </tr>
 
                     </tbody>
@@ -79,6 +79,94 @@
 
 
             </div>
+        </div>
+
+    </div>
+
+    <div id="openModal" class="modalDialog">
+        <div>
+           
+            <a href="#close" title="Close" class="close">X</a>
+            <div class="modal-body">
+                <div>
+                    <p class="title-modal">Actualizar Productos</p>
+                    <div>
+                        <img class="box-image-update" src="assets/images/americana.png" alt="">
+
+                    </div>
+                    <div class="input-style">
+                        <p class="font-modal-subtitle">Código </p>
+                        <input type="text" class="box-text">
+                    </div>
+                    <div class="input-style">
+                        <p class="font-modal-subtitle">Nombre</p>
+                        <input type="text" class="box-text">
+                    </div>
+                    <div class="input-style">
+                        <p class="font-modal-subtitle">Tipo de Producto</p>
+                        <select class="select-style" name="" id="">
+                            <option value="">Pizzas</option>
+                            <option value="">Bebidas</option>
+                            <option value="">Adicionales</option>
+                            <option value="">Postre</option>
+                            <option value="">Extra</option>
+                        </select>
+
+                    </div>
+                    <div class="input-style">
+                        <p class="font-modal-subtitle">Descripción </p>
+                        <input type="text" class="box-text">
+                    </div>
+                    <div class="input-style">
+                        <p class="font-modal-subtitle">Precio </p>
+                        <input type="text" class="box-text">
+                    </div>
+
+                </div>
+                <div>
+                    <div>
+                        <span class="font-text-modal font-modal-subtitle">Activar Productos en todas las tiendas</span>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+
+                    <div class="title-line-decoration">
+                        <div>
+                            <p class="font-modal-subtitle">Tiendas en Lima</p>
+                        </div>
+                        <div class="line-decoration"></div>
+                        <div class="arrow"></div>
+
+                    </div>
+                    <div class="grid-tiendas">
+                        <div class="col-1">
+                            <div class="grid-button-switch">
+                                <div>
+                                    <p class="">Benavides 20</p>
+                                </div>
+                                <div>
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                      
+                      
+
+
+
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
         </div>
 
     </div>
